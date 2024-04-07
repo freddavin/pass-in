@@ -1,0 +1,20 @@
+services:
+  postgres-db:
+    image: postgres
+    volumes:
+      - db-volume:/var/lib/postgresql/data
+    environment:
+      POSTGRES_USER: admin
+      POSTGRES_PASSWORD: admin
+    ports:
+      - '5432:5432'
+    networks:
+      - db-network
+
+volumes:
+  db-volume:
+    driver: local
+
+networks:
+  db-network:
+    driver: bridge

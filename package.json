@@ -1,0 +1,26 @@
+{
+  "name": "pass-in",
+  "version": "1.0.0",
+  "description": "API de Pass-In criada para o evento NLW Unite da Rocketseat",
+  "main": "index.js",
+  "scripts": {
+    "dev": "tsx watch src/server.ts",
+    "studio": "prisma studio",
+    "migrate": "prisma migrate dev"
+  },
+  "keywords": [],
+  "author": "Frederico Ferreira",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^20.12.5",
+    "prisma": "^5.12.1",
+    "tsx": "^4.7.2",
+    "typescript": "^5.4.4"
+  },
+  "dependencies": {
+    "@prisma/client": "5.12.1",
+    "fastify": "^4.26.2",
+    "fastify-type-provider-zod": "^1.1.9",
+    "zod": "^3.22.4"
+  }
+}

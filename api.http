@@ -1,0 +1,33 @@
+### Variables 
+@baseURL = http://localhost:3000
+@eventId = e5a27d16-3245-4816-bdea-1ae0deb69030
+@attendeeId = f18f6231-1b82-441c-8d03-fe11ab70d123
+
+### create event
+POST {{baseURL}}/events
+Content-Type: application/json
+
+{
+  "title": "NLW Unite Unlimited"
+}
+
+### register on event
+POST {{baseURL}}/events/{{eventId}}/register
+Content-Type: application/json
+
+{
+  "name": "Laliny Uchoa",
+  "email": "lalinyuchoa@gmail.com"
+}
+
+### get event
+GET {{baseURL}}/events/{{eventId}}
+
+### get event attendees
+GET {{baseURL}}/events/{{eventId}}/attendees?page=0&name=Laliny
+
+### get attendee badge
+GET {{baseURL}}/attendees/{{attendeeId}}
+
+### check-in
+GET {{baseURL}}/attendees/{{attendeeId}}/check-in
