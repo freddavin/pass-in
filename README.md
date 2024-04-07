@@ -1,4 +1,8 @@
-# pass.in
+# pass.in - NLW Unite | Rocketseat
+
+Projeto referente ao evento NLW Unite realizado pela Rocketseat utilizando Node.js, Typescript, PostgreSQL.
+
+## Objetivo
 
 O pass.in é uma aplicação de **gestão de participantes em eventos presenciais**.
 
